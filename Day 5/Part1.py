@@ -28,16 +28,6 @@ if __name__ == '__main__':
     results = {}
 
     for seed in line[6:len(line)].split():
-    #for seed in ['14']:
-        # soil = check_map (data, 4, 5, int(seed))
-        # fertilizer = check_map (data, 8, 10, soil)
-        # water = check_map (data, 13, 16, fertilizer)
-        # light = check_map (data, 19, 20, water)
-        # temp = check_map (data, 23, 25, light)
-        # humidity = check_map (data, 28, 29, temp)
-        # location = check_map (data, 32, 33, humidity)
-        # print (seed, soil, fertilizer, water, light, temp, humidity, location)
-        #
         soil = check_map (data, 4, 21, int(seed))
         fertilizer = check_map (data, 24, 31, soil)
         water = check_map (data, 34, 68, fertilizer)
